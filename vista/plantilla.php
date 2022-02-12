@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proimpo prueba</title>
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
 </head>
 <body>
     <?php

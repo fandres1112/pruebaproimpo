@@ -1,3 +1,4 @@
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all">
 <hgroup>
     <h1>Iniciar sesión</h1>
     <h3>Prueba Proimpo</h3>
