@@ -16,10 +16,14 @@ git clone https://github.com/Logicainformatica18/bodegainformatica.git
 - Configurar la contraseña en el archivo **modelo/conexionbd.php**
 - Configurar el usuario en el archivo **modelo/conexionbd.php**
 ## Vista previa de la aplicación
-- Formulario de Login__
-![](https://github.com/fandres1112/pruebaproimpo/blob/main/images/login.png?raw=true)
-- Formulario de Registro__
-![](https://github.com/fandres1112/pruebaproimpo/blob/main/images/registro.png?raw=true)
+- Formulario de Login
+- ![](https://github.com/fandres1112/pruebaproimpo/blob/main/images/login.png?raw=true)
+- Formulario de Registro
+- ![](https://github.com/fandres1112/pruebaproimpo/blob/main/images/registro.png?raw=true)
+- Cuando el usuario inicie sesión accederá al formulario de Contacto
+- ![](https://github.com/fandres1112/pruebaproimpo/blob/main/images/contacto.png?raw=true)
+- En la parte superior el usuario podrá navegar, debe seleccionar la opción **"Consulta"**
+- ![](https://github.com/fandres1112/pruebaproimpo/blob/main/images/consulta.png?raw=true)
 ### Perfil
 
 ## Contribución
