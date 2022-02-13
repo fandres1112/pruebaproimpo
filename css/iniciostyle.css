@@ -25,17 +25,22 @@ h1 { color: #636333; }
 h3 { color: #102EEF; }
 
 form {
-	width: 380px;
+	width: 620px;
 	margin: 4em auto;
 	padding: 3em 2em 2em 2em;
-	background: #FEFEFE;
-	border: 1px solid #ebebeb;
+	background: #EAEBF5;
+	border: 1px solid #FEFEFE;
 	box-shadow: rgba(0,0,0,0.14902) 0px 1px 1px 0px,rgba(0,0,0,0.09804) 0px 1px 2px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .group { 
 	position: relative; 
-	margin-bottom: 10px; 
+	margin-bottom: 15px; 
+    margin-right: 25px;
+    margin-left: 25px;
 }
 
 input {
@@ -43,7 +48,7 @@ input {
 	padding: 10px 10px 10px 5px;
 	-webkit-appearance: none;
 	display: block;
-	background: #FEFEFE;
+	background: #EAEBF5;
 	color: #636363;
 	width: 100%;
 	border: none;
@@ -63,8 +68,9 @@ label {
 	position: static;
 	pointer-events: none;
 	left: 5px;
-	top: 15px;
+	top: 10px;
 	transition: all 0.2s ease;
+    margin: 0 auto;
 }
 
 

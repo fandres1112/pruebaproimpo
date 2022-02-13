@@ -1,3 +1,8 @@
+<?php session_start(); 
+date_default_timezone_set('America/Panama');
+error_reporting(E_ALL ^ E_NOTICE);
+//error_reporting(E_ERROR |  E_PARSE);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,8 +10,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proimpo prueba</title>
+    <link href="css/header.scss" rel="stylesheet" type="text/css" media="all">
 </head>
 <body>
+    <?php if (isset($_GET["pagina"]) && $_GET["pagina"] != "registro"): ?>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.php?pagina=inicio&usu=<?php echo $_GET['usu'] ?>">Inicio</a></li>
+            <li><a href="index.php?pagina=inicio&usu=<?php echo $_GET['usu'] ?>">Tabla</a></li>
+            <li><a href="index.php?pagina=salir">Salir</a></li>
+        </ul>
+    </nav>
+    <?php endif ?>
     <?php
 
         if (isset($_GET["pagina"])) {
@@ -20,7 +35,7 @@
                 include "vista/pagina/".$_GET["pagina"].".php";
 
             echo '	<footer class="py-1 text-center fixed-bottom bg-dark navbar-dark text-light">
-                    <p>&copy; 2020 - 2021 Intranet. Todos los derechos son reservados | Diseñado por <a href="https://servicegroup.com.co" target="_blank">SERVICE GROUP</a> - SI.TI</p>
+                    <p>&copy; 2022 - Prueba PROIMPO. Todos los derechos son reservados | Diseñado por FABIAN JARAMILLO</p>
                     </footer>';
 
             }else{

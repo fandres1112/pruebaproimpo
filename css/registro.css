@@ -35,7 +35,7 @@ form {
 
 .group { 
 	position: relative; 
-	margin-bottom: 10px; 
+	margin-bottom: 45px; 
 }
 
 input {
@@ -60,10 +60,10 @@ label {
 	color: #999; 
 	font-size: 18px;
 	font-weight: normal;
-	position: static;
+	position: absolute;
 	pointer-events: none;
 	left: 5px;
-	top: 15px;
+	top: 10px;
 	transition: all 0.2s ease;
 }
 
