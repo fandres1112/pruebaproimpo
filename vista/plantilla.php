@@ -17,7 +17,7 @@ error_reporting(E_ALL ^ E_NOTICE);
     <nav>
         <ul class="menu">
             <li><a href="index.php?pagina=inicio&usu=<?php echo $_GET['usu'] ?>">Inicio</a></li>
-            <li><a href="index.php?pagina=inicio&usu=<?php echo $_GET['usu'] ?>">Tabla</a></li>
+            <li><a href="index.php?pagina=consulta&usu=<?php echo $_GET['usu'] ?>">Consulta</a></li>
             <li><a href="index.php?pagina=salir">Salir</a></li>
         </ul>
     </nav>
@@ -29,6 +29,7 @@ error_reporting(E_ALL ^ E_NOTICE);
 
             if ($_GET["pagina"] == "inicio" || 
                 $_GET["pagina"] == "registro" || 
+                $_GET["pagina"] == "consulta" || 
                 $_GET["pagina"] == "salir") {
                 # code...
 

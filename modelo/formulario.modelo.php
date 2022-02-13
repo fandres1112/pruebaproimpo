@@ -37,4 +37,42 @@ class modeloformulario {
         
     }
 
+    static public function mdlregistrocontacto($tabla, $datos) {
+
+        
+        # statement: Declaracion
+        $stmt = Conexion::Conectar()->prepare("Insert Into $tabla (nombre, apellido, correo, telefono, direccion, ciudad, usuario_creacion) Values (:nombre, :apellido, :correo, :telefono, :direccion, :ciudad, :usu)");
+        $stmt->bindParam(":nombre", $datos["nombre"], PDO::PARAM_STR);
+        $stmt->bindParam(":apellido", $datos["apellido"], PDO::PARAM_STR);
+        $stmt->bindParam(":correo", $datos["correo"], PDO::PARAM_STR);
+        $stmt->bindParam(":telefono", $datos["telefono"], PDO::PARAM_STR);
+        $stmt->bindParam(":direccion", $datos["direccion"], PDO::PARAM_STR);
+        $stmt->bindParam(":ciudad", $datos["ciudad"], PDO::PARAM_STR);
+        $stmt->bindParam(":usu", $datos["usu"], PDO::PARAM_INT);
+
+        if ($stmt->execute()) {
+			# code...
+			return true;
+			//$stmt->close();
+
+		}else{
+
+			$errorsql = $stmt->errorInfo();
+			print_r($errorsql);
+		}
+        
+    }
+
+    static public function mdllistarcontactos($tabla) {
+
+        # statement: Declaracion
+        $stmt = Conexion::Conectar()->prepare("select * from $tabla");
+
+        $stmt->execute();
+		$data = $stmt -> fetchAll(PDO::FETCH_ASSOC);
+		print json_encode($data, JSON_UNESCAPED_UNICODE);//envio el array final el formato json a AJAX
+		$stmt = null;
+        
+    }
+
 }

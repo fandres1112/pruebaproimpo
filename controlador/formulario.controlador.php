@@ -61,4 +61,42 @@ class controladorformulario {
         }
     }
 
+    static public function ctrregistrocontacto() {
+        # code...
+        if (isset($_POST["guardarcontacto"])) {
+            # code...
+            $tabla = "datosusuarios";
+            $datos = array( "nombre" => $_POST["nombre"],
+                            "apellido" => $_POST["apellido"],
+                            "correo" => $_POST["correo"],
+                            "telefono" => $_POST["telefono"],
+                            "direccion" => $_POST["direccion"],
+                            "ciudad" => $_POST["ciudad"],
+                            "usu" => $_GET["usu"]
+                            );
+            
+            $Respuesta = modeloformulario::mdlregistrocontacto($tabla, $datos);
+			//unset($_GET['FechaConsulta']);
+			echo '<script>
+
+							if(window.history.replaceState){
+								
+								window.history.replaceState( null, null, window.location.href );
+
+							}
+						</script>';
+			return $Respuesta;
+        }
+    }
+
+    static public function ctrlistarcontactos() {
+        # code...
+        $tabla = "datosusuarios";
+
+        $Respuesta = modeloformulario::mdllistarcontactos($tabla);
+
+        return $Respuesta;
+        
+    }
+
 }

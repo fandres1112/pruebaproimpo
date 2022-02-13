@@ -30,8 +30,8 @@ if (!isset($_SESSION["validar"])) {
         <label>Apellido</label>
     </div>
     <div class="group">
-        <input type="email" name="email" required><span class="highlight"></span><span class="bar"></span>
-        <label>E-Mail</label>
+        <input type="email" name="correo" required><span class="highlight"></span><span class="bar"></span>
+        <label>Correo</label>
     </div>
     <div class="group">
         <input type="text" name="telefono" required><span class="highlight"></span><span class="bar"></span>
@@ -45,9 +45,15 @@ if (!isset($_SESSION["validar"])) {
         <input type="text" name="ciudad" required><span class="highlight"></span><span class="bar"></span>
         <label>Ciudad</label>
     </div>
-    <button type="submit" name="guardarcontacto" class="button buttonBlue">Registrase
+    <button type="submit" name="guardarcontacto" class="button buttonBlue">Registrarse
         <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
     </button>
 </form>
+<?php $registrarcontacto = controladorformulario::ctrregistrocontacto();
+    if ($registrarcontacto == true): ?>
+        <center><p>Registro Exitoso! <a href="index.php?pagina=consulta&usu=<?php echo $_GET['usu'] ?>" >Ver lista de contactos</a></p></center>
+<?php endif ?>
+
+
 
 <script src="js/jslogin.js" type="text/javascript"></script>
