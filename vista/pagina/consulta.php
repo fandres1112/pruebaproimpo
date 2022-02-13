@@ -16,8 +16,7 @@ if (!isset($_SESSION["validar"])) {
 //$tabla = controladorformulario::ctrlistarcontactos();
 //print_r($tabla);
 ?>
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css"/> 
-<table id="tablaUsuarios" class="table-striped table-bordered" style="width:100%">
+<table id="datosusuarios" class="table-striped table-bordered" style="width:100%">
   <thead>
     <tr>
       <th>Nombre</th>

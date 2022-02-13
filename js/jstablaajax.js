@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('#tablaUsuarios').DataTable( {
+    $('#datosusuarios').DataTable( {
       "ajax":{
           "url": "modelo/consultatablaajax.php",
           "dataSrc":""

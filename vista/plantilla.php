@@ -11,6 +11,7 @@ error_reporting(E_ALL ^ E_NOTICE);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proimpo prueba</title>
     <link href="css/header.scss" rel="stylesheet" type="text/css" media="all">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 </head>
 <body>
     <?php if (isset($_GET["pagina"]) && $_GET["pagina"] != "registro"): ?>
@@ -52,5 +53,6 @@ error_reporting(E_ALL ^ E_NOTICE);
         }
     ?>
 
+<script src="js/jsvalidaciones.js" type="text/javascript"></script>
 </body>
 </html>
