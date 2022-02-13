@@ -39,5 +39,6 @@ if (!isset($_SESSION["validar"])) {
 </table>
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<!-- Para la consulta de los datos de formulario lo llamamos mediante ajax, con la ayuda del Plugin DataTables -->
 <script type="text/javascript" src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
 <script src="js/jstablaajax.js" type="text/javascript"></script>

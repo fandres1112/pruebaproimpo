@@ -1,3 +1,4 @@
+//Funcion que se crea para poder pasar los datos a la vista del cliente
 $(document).ready(function() {
     $('#datosusuarios').DataTable( {
         "language": {
