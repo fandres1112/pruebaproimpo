@@ -8,10 +8,15 @@
 /* general styles */
 
 div {
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
-table{width:100%;border-collapse:collapse;margin:1em 0;}
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin:1em 0;
+    padding: 2px;
+}
 th, td{text-align:left;padding:.5em;border:1px solid #fff;}
 th{background:#102EEF url(tr_back.gif) repeat-x;color:#fff;}
 td{background:#e5f1f4;}
@@ -21,16 +26,31 @@ td{background:#e5f1f4;}
 tr.even td{background:#EAEBF5;}
 tr.odd td{background:#FEFEFE;}
 
-h1, h3 { font-weight: 300; }
+* { box-sizing:border-box; }
 
-h1 { color: #636333; }
+@font-face {
+    font-family: 'Calibri Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Calibri Light'), url('fuentes/calibril.woff') format('woff');
+    }
 
-h3 { color: #102EEF; }
+body {
+	font-family: 'Calibri Light';
+	background: #FEFEFE;
+  -webkit-font-smoothing: antialiased;
+}
 
 hgroup { 
 	text-align:center;
 	margin-top: 4em;
 }
+
+h1, h3 { font-weight: 300; }
+
+h1 { color: #636333; }
+
+h3 { color: #102EEF; }
 
 footer { 
     text-align: center; 

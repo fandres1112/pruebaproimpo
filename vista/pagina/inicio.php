@@ -35,7 +35,7 @@ if (!isset($_SESSION["validar"])) {
     </div>
     <div class="group">
         <input type="text" name="telefono" class="validanumericos" required><span class="highlight"></span><span class="bar"></span>
-        <label>Celular #</label>
+        <label>Celular</label>
     </div>
     <div class="group">
         <input type="text" name="direccion" required><span class="highlight"></span><span class="bar"></span>

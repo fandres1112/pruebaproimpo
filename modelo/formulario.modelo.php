@@ -11,7 +11,6 @@ class modeloformulario {
 		$stmt->execute();
 
 		return $stmt -> fetch();
-		//$stmt->close();
 		$stmt = null;
 
     }
@@ -27,7 +26,6 @@ class modeloformulario {
         if ($stmt->execute()) {
 			# code...
 			return true;
-			//$stmt->close();
 
 		}else{
 
@@ -53,25 +51,12 @@ class modeloformulario {
         if ($stmt->execute()) {
 			# code...
 			return true;
-			//$stmt->close();
 
 		}else{
 
 			$errorsql = $stmt->errorInfo();
 			print_r($errorsql);
 		}
-        
-    }
-
-    static public function mdllistarcontactos($tabla) {
-
-        # statement: Declaracion
-        $stmt = Conexion::Conectar()->prepare("select a.nombre as nombre, a.apellido as apellido, a.correo as correo, a.telefono as telefono, a.direccion as direccion, a.ciudad as ciudad, b.usuario as usuario, a.fecha_creacion as fecha from $tabla");
-
-        $stmt->execute();
-		$data = $stmt -> fetchAll(PDO::FETCH_ASSOC);
-		print json_encode($data, JSON_UNESCAPED_UNICODE);//envio el array final el formato json a AJAX
-		$stmt = null;
         
     }
 

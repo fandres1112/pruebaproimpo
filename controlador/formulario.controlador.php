@@ -89,14 +89,4 @@ class controladorformulario {
         }
     }
 
-    static public function ctrlistarcontactos() {
-        # code...
-        $tabla = "datosusuarios";
-
-        $Respuesta = modeloformulario::mdllistarcontactos($tabla);
-
-        return $Respuesta;
-        
-    }
-
 }

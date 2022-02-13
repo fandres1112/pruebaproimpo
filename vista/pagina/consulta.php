@@ -13,8 +13,6 @@ if (!isset($_SESSION["validar"])) {
     return;
   }
 }
-//$tabla = controladorformulario::ctrlistarcontactos();
-//print_r($tabla);
 ?>
 <link href="//cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css" media="all">
 <link href="css/consulta.css" rel="stylesheet" type="text/css" media="all">
