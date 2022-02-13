@@ -16,9 +16,9 @@ git clone https://github.com/Logicainformatica18/bodegainformatica.git
 - Configurar la contraseña en el archivo **modelo/conexionbd.php**
 - Configurar el usuario en el archivo **modelo/conexionbd.php**
 ## Vista previa de la aplicación
-- Login
+- Formulario de Login__
 ![](https://github.com/fandres1112/pruebaproimpo/blob/main/images/login.png?raw=true)
-- Registro
+- Formulario de Registro__
 ![](https://github.com/fandres1112/pruebaproimpo/blob/main/images/registro.png?raw=true)
 ### Perfil
 
