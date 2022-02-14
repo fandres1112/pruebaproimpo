@@ -24,6 +24,8 @@ if (!isset($_SESSION["validar"])) {
 <table id="datosusuarios" class="table-striped table-bordered" style="width:100%">
   <thead>
     <tr>
+      <th>Tipo ID</th>
+      <th># Identificacion</th>
       <th>Nombre</th>
       <th>Apellido</th>
       <th>Correo</th>                                

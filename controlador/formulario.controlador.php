@@ -72,6 +72,8 @@ class controladorformulario {
                             "telefono" => $_POST["telefono"],
                             "direccion" => $_POST["direccion"],
                             "ciudad" => $_POST["ciudad"],
+                            "cedula" => $_POST["cedula"],
+                            "tipoid" => $_POST["tipoid"],
                             "usu" => $_GET["usu"]
                             );
             
@@ -88,5 +90,15 @@ class controladorformulario {
 			return $Respuesta;
         }
     }
+
+	static public function ctrlistartipoid(){
+		
+		# code...
+		$tabla = "tipoidentificacion";
+		$Respuesta = modeloformulario::mdllistartipoid($tabla);
+
+		return $Respuesta;
+
+	}
 
 }

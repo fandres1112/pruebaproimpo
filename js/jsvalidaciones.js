@@ -36,6 +36,7 @@ $(document).ready(function(){
             e.preventDefault();
     });
 
+    //Validación de campos vacios
     $(".validacampovacio").keyup(function(){
 		usuario=$("#loginusuario").val();	
         clave=$("#loginclave").val();	

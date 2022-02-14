@@ -18,6 +18,8 @@ $(document).ready(function() {
             "dataSrc":""
         },
         "columns":[
+            {"data": "tipoid"},
+            {"data": "cedula"},
             {"data": "nombre"},
             {"data": "apellido"},
             {"data": "correo"},

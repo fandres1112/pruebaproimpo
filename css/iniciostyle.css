@@ -24,6 +24,8 @@ h1 { color: #102EEF; font-weight: bold;}
 
 h3 { color: #636a74; }
 
+h4 { color: #102EEF; }
+
 form {
 	width: 620px;
 	margin: 4em auto;
@@ -31,12 +33,20 @@ form {
 	background: #EAEBF5;
 	border: 1px solid #FEFEFE;
 	box-shadow: rgba(0,0,0,0.14902) 0px 1px 1px 0px,rgba(0,0,0,0.09804) 0px 1px 2px 0px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
 }
 
+.columna {
+	
+	columns: 2;
+}
 .group { 
+	position: relative; 
+	margin-bottom: 15px; 
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.group.select { 
 	position: relative; 
 	margin-bottom: 15px; 
     margin-right: 25px;
@@ -56,7 +66,20 @@ input {
 	border-bottom: 1px solid #757575;
 }
 
-input:focus { outline: none; }
+select {
+	font-size: 18px;
+	padding: 10px 10px 10px 5px;
+	-webkit-appearance: none;
+	display: block;
+	background: #EAEBF5;
+	color: #636363;
+	width: 100%;
+	border: none;
+	border-radius: 0;
+	border-bottom: 1px solid #757575;
+}
+
+input:focus, select:focus { outline: none; }
 
 
 /* Label */
@@ -76,7 +99,7 @@ label {
 
 /* active */
 
-input:focus ~ label, input.used ~ label {
+input:focus ~ label, input.used ~ label, select:focus ~ label, select.used ~ label {
 	top: -20px;
   transform: scale(.75); left: -2px;
 	/* font-size: 14px; */
@@ -162,7 +185,6 @@ input:focus ~ .highlight {
   transition: all 0.15s ease;
 }
 .button:focus { outline: 0; }
-
 
 /* Button modifiers */
 
