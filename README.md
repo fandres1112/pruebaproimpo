@@ -10,8 +10,8 @@ git clone https://github.com/Logicainformatica18/bodegainformatica.git
 ### 2 Paso
 - Ingresar al servidor y posterior a phpMyAdmin
 - Crear una base de datos con el nombre **pruebaproimpo**
-- Luego restaurar la base de datos **"pruebaproimpo.sql"**
 ![](https://github.com/fandres1112/pruebaproimpo/blob/main/images/crearbdphpmyadmin.png?raw=true)
+- Luego restaurar o importar la base de datos **"pruebaproimpo.sql"**
 ### 3 Paso
 - Configurar la contraseña en el archivo **modelo/conexionbd.php**
 - Configurar el usuario en el archivo **modelo/conexionbd.php**

@@ -51,7 +51,8 @@ if (!isset($_SESSION["validar"])) {
 </form>
 <?php $registrarcontacto = controladorformulario::ctrregistrocontacto();
     if ($registrarcontacto == true): ?>
-        <center><p>Registro Exitoso! <a href="index.php?pagina=consulta&usu=<?php echo $_GET['usu'] ?>" >Ver lista de contactos</a></p></center>
+        <center><p><h3>Registro Exitoso! <a href="index.php?pagina=consulta&usu=<?php echo $_GET['usu'] ?>" >Ver lista de contactos</a></h3></p></center>
+        <br>
 <?php endif ?>
 
 
