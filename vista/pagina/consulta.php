@@ -1,5 +1,5 @@
 <?php 
-
+//Validar que la sesión sea correcta
 if (!isset($_SESSION["validar"])) {
   # code...
 	echo '<script> window.location = "index.php"; </script>';

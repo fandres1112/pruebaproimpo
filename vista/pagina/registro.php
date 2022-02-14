@@ -23,6 +23,7 @@
         Error! Las contraseñas deben de coincidir.
     </div>
 </form>
+<!-- Obtenemos la confirmación de la inserción del registro -->
 <?php $registrarusuario = controladorformulario::ctrregistrousuario();
     if ($registrarusuario == true): ?>
         <center><p><h3>¡Registro Exitoso!</h3></p></center>

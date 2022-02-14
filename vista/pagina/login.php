@@ -16,6 +16,7 @@
         <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
     </button>
     <?php
+    //Instanciamos el controlador para poder iniciar la sesión
     $inicio = new controladorformulario();
     $inicio -> ctriniciarsesion();
     ?>

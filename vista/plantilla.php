@@ -1,4 +1,6 @@
-<?php session_start(); 
+<?php 
+//Iniciar la sesión
+session_start(); 
 date_default_timezone_set('America/Panama');
 //error_reporting(E_ALL ^ E_NOTICE);
 //error_reporting(0);

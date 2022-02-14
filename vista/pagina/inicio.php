@@ -1,5 +1,5 @@
 <?php 
-
+//Validar que la sesión sea correcta
 if (!isset($_SESSION["validar"])) {
   # code...
 	echo '<script> window.location = "index.php"; </script>';
@@ -13,6 +13,7 @@ if (!isset($_SESSION["validar"])) {
     return;
   }
 }
+//llamamos al controlador para poder obtener la lista de Tipo ID
 $listartipoid = controladorformulario::ctrlistartipoid();
 ?>
 
@@ -26,6 +27,7 @@ $listartipoid = controladorformulario::ctrlistartipoid();
     <div class="group">
         <select name="tipoid" id="tipoid">
             <option value="">Seleccione</option>
+            <!-- Corremos el array que nos trae la lista de los tipos de ID -->
             <?php foreach ($listartipoid as $key => $value): ?>
             <option value="<?php echo $value['pk_tipoid'] ?>"><?php echo $value['descripcion'] ?></option>
             <?php endforeach ?>
@@ -65,6 +67,7 @@ $listartipoid = controladorformulario::ctrlistartipoid();
         <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
     </button>
 </form>
+<!-- Obtenemos la confirmación de la inserción  -->
 <?php $registrarcontacto = controladorformulario::ctrregistrocontacto();
     if ($registrarcontacto == true): ?>
         <center><p><h3>Registro Exitoso! <a href="index.php?pagina=consulta&usu=<?php echo $_GET['usu'] ?>" >Ver lista de contactos</a></h3></p></center>
