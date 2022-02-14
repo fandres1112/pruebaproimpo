@@ -24,9 +24,4 @@ git clone https://github.com/Logicainformatica18/bodegainformatica.git
 - ![](https://github.com/fandres1112/pruebaproimpo/blob/main/images/contacto.png?raw=true)
 - En la parte superior el usuario podrá navegar, debe seleccionar la opción **"Consulta"**
 - ![](https://github.com/fandres1112/pruebaproimpo/blob/main/images/consulta.png?raw=true)
-### Perfil
-
-## Contribución
-
-## Licencia
-MIT
+#### Fabian Jaramillo
