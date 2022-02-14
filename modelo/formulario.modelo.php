@@ -4,7 +4,7 @@ require_once "conexionbd.php";
 
 class modeloformulario {
     
-    public function mdliniciarsesion($tabla, $campo, $valor) {
+    static public function mdliniciarsesion($tabla, $campo, $valor) {
 
         $stmt = Conexion::Conectar()->prepare("Select * From $tabla where $campo = :$valor");
 		$stmt->bindParam(":".$valor, $valor, PDO::PARAM_STR);

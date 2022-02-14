@@ -1,5 +1,5 @@
 #  PRUEBA PROIMPO 
-Este proyecto se realiza para dar continuidad al proceso de selección de la empresa PROIMPO, en donde se genera una aplicación en la que el usuario se puede loguear, registrar, rellenar un formulario de contacto y poder ver la consulta del mismo. Se realiza conforme a los requerimientos del cliente en donde se implementa PHP(Version 7.4.20), HTML, CSS, Javascript, Ajax, Jquery. Para el desarrollo de la aplicación se utiliza el servidor local XAMPP.
+Este proyecto se realiza para dar continuidad al proceso de selección de la empresa PROIMPO, en donde se genera una aplicación en la que el usuario se puede loguear, registrar, rellenar un formulario de contacto y poder ver la consulta del mismo. Se realiza conforme a los requerimientos del cliente en donde se implementa PHP(Version 8.1.2), HTML, CSS, Javascript, Ajax, Jquery. Para el desarrollo de la aplicación se utiliza el servidor local XAMPP.
 ## Instalación
 ### 1 Paso
 - **1 forma**. Dar clic en Code y luego en Donwload Zip, para que posteriormente sea colocado el repositorio en la ruta **"C:\xampp\htdocs"**
