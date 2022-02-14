@@ -45,12 +45,12 @@ $listartipoid = controladorformulario::ctrlistartipoid();
         <label>Apellido</label>
     </div>
     <div class="group">
-        <input type="email" name="correo" required><span class="highlight"></span><span class="bar"></span>
-        <label>Correo</label>
+        <input type="email" name="correo" id="correo" class="validacorreo" required><span class="highlight"></span><span class="bar"></span>
+        <label>Correo <label id="msjcorreo" hidden="true">- Ej. corr@gmail.com</label></label>
     </div>
     <div class="group">
-        <input type="text" name="telefono" class="validanumericos" required><span class="highlight"></span><span class="bar"></span>
-        <label>Celular</label>
+        <input type="text" name="telefono" id="celular" class="validanumericos" required><span class="highlight"></span><span class="bar"></span>
+        <label>Celular <label id="msjcelular" hidden="true">- 10 caracteres</label></label>
     </div>
     <div class="group">
         <input type="text" name="direccion" required><span class="highlight"></span><span class="bar"></span>

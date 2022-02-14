@@ -55,4 +55,27 @@ $(document).ready(function(){
         }
 	});	
 
+    //Validar que el correo sea escrito bien
+    $('.validacorreo').change(function() {
+        correo=$("#correo").val();
+        re=/^([\da-z_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+	if(!re.exec(correo)){
+		document.getElementById("msjcorreo").hidden = false;
+        document.getElementById("msjcorreo").style.color = "red";
+	}
+	else document.getElementById("msjcorreo").hidden = true;
+
+    });
+
+    //Validar caracteres del campo celular
+    $('#celular').keyup(function() {
+        celular=$("#celular").val();
+	if(celular.length < 10 || celular.length > 10){
+		document.getElementById("msjcelular").hidden = false;
+        document.getElementById("msjcelular").style.color = "red";
+	}
+	else document.getElementById("msjcelular").hidden = true;
+
+    });
+
 });
