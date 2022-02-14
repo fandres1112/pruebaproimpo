@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 14-02-2022 a las 02:47:34
+-- Tiempo de generación: 14-02-2022 a las 04:16:17
 -- Versión del servidor: 10.4.22-MariaDB
 -- Versión de PHP: 8.1.2
 
@@ -29,6 +29,8 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `datosusuarios` (
   `pk_datosusuarios` int(11) NOT NULL,
+  `cedula` varchar(12) NOT NULL,
+  `fk_tipoid` int(11) NOT NULL DEFAULT 1,
   `nombre` varchar(100) NOT NULL,
   `apellido` varchar(100) NOT NULL,
   `correo` varchar(100) NOT NULL,
@@ -43,21 +45,45 @@ CREATE TABLE `datosusuarios` (
 -- Volcado de datos para la tabla `datosusuarios`
 --
 
-INSERT INTO `datosusuarios` (`pk_datosusuarios`, `nombre`, `apellido`, `correo`, `telefono`, `direccion`, `ciudad`, `usuario_creacion`, `fecha_creacion`) VALUES
-(1, 'Darkaaaaa', 'perea', 'asd@gmail.com', '3122212323', 'calle 34 21 12', 'Cali', 8, '2022-02-13 07:41:21'),
-(2, 'Andres', 'as', 'asdasdas@gmail.com', '3121121223', 'calle 34 21 12', 'Cali', 9, '2022-02-13 07:46:57'),
-(3, 'Arnold', 'Piu', 'aaa@gmail.com', '3215579808', 'Calle 3', 'Medellin', 20, '2022-02-13 16:28:19'),
-(4, 'Santiago', 'Ress', 'eee@gmail.com', '3150098767', 'Calle5', 'Bogota', 20, '2022-02-13 16:30:40'),
-(5, 'Laura', 'Herrera', 'laura@hotmail.com', '3245545654', 'Calle 1', 'Pereira', 8, '2022-02-13 19:14:46'),
-(6, 'Antonella', 'Perez', 'Anto@gmail.com', '3212200987', 'Calle 6', 'Cali', 8, '2022-02-13 19:15:22'),
-(7, 'Sury', 'Sol', 'Sur@hotmail.es', '3198857464', 'Calle 7', 'Bogota', 8, '2022-02-13 19:15:56'),
-(8, 'Oriana', 'Fretz', 'Fret@gmail.com', '3218869786', 'Calle 8', 'Medellin', 8, '2022-02-13 19:16:59'),
-(9, 'Siri', 'Lopez', 'siri@yahoo.com', '3144444444', 'Calle 10', 'Armenia', 8, '2022-02-13 19:17:38'),
-(10, 'Angela', 'Grisales', 'ange@hotmail.com', '3132232222', 'Calle 11', 'Cali', 8, '2022-02-13 19:18:09'),
-(11, 'Alejandro', 'Cena', 'ale1111@gmail.com', '3129998745', 'Calle 12', 'Bogota', 8, '2022-02-13 19:19:06'),
-(12, 'Nuevo', 'Registro', 'sdsd@gmail.com', '3212212222', 'Calle 12', 'Cali', 8, '2022-02-14 01:42:02'),
-(13, 'Antonio', 'Pino', 'Apino@hotmail.com', '3432232121', 'Cra 22', 'Bogota', 8, '2022-02-14 01:44:26'),
-(14, 'Agie', 'Solarte', 'Angi@gmail.com', '3213333333', 'Cra 14 #23B-01', 'Barranquilla', 8, '2022-02-14 01:46:04');
+INSERT INTO `datosusuarios` (`pk_datosusuarios`, `cedula`, `fk_tipoid`, `nombre`, `apellido`, `correo`, `telefono`, `direccion`, `ciudad`, `usuario_creacion`, `fecha_creacion`) VALUES
+(1, '1132123244', 1, 'Darkaaaaa', 'perea', 'asd@gmail.com', '3122212323', 'calle 34 21 12', 'Cali', 8, '2022-02-13 07:41:21'),
+(2, '44543434', 2, 'Andres', 'as', 'asdasdas@gmail.com', '3121121223', 'calle 34 21 12', 'Cali', 9, '2022-02-13 07:46:57'),
+(3, '66545432', 1, 'Arnold', 'Piu', 'aaa@gmail.com', '3215579808', 'Calle 3', 'Medellin', 20, '2022-02-13 16:28:19'),
+(4, '1121324322', 1, 'Santiago', 'Ress', 'eee@gmail.com', '3150098767', 'Calle5', 'Bogota', 20, '2022-02-13 16:30:40'),
+(5, '22345432', 1, 'Laura', 'Herrera', 'laura@hotmail.com', '3245545654', 'Calle 1', 'Pereira', 8, '2022-02-13 19:14:46'),
+(6, '1123456789', 1, 'Antonella', 'Perez', 'Anto@gmail.com', '3212200987', 'Calle 6', 'Cali', 8, '2022-02-13 19:15:22'),
+(7, '1123212111', 1, 'Sury', 'Sol', 'Sur@hotmail.es', '3198857464', 'Calle 7', 'Bogota', 8, '2022-02-13 19:15:56'),
+(8, '1123212121', 5, 'Oriana', 'Fretz', 'Fret@gmail.com', '3218869786', 'Calle 8', 'Medellin', 8, '2022-02-13 19:16:59'),
+(9, '1122321', 1, 'Siri', 'Lopez', 'siri@yahoo.com', '3144444444', 'Calle 10', 'Armenia', 8, '2022-02-13 19:17:38'),
+(10, '99876546', 1, 'Angela', 'Grisales', 'ange@hotmail.com', '3132232222', 'Calle 11', 'Cali', 8, '2022-02-13 19:18:09'),
+(11, '1145556677', 1, 'Alejandro', 'Cena', 'ale1111@gmail.com', '3129998745', 'Calle 12', 'Bogota', 8, '2022-02-13 19:19:06'),
+(12, '1122334455', 2, 'Nuevo', 'Registro', 'sdsd@gmail.com', '3212212222', 'Calle 12', 'Cali', 8, '2022-02-14 01:42:02'),
+(13, '1122321288', 1, 'Antonio', 'Pino', 'Apino@hotmail.com', '3432232121', 'Cra 22', 'Bogota', 8, '2022-02-14 01:44:26'),
+(14, '43565654', 3, 'Agie', 'Solarte', 'Angi@gmail.com', '3213333333', 'Cra 14 #23B-01', 'Barranquilla', 8, '2022-02-14 01:46:04'),
+(15, '1123234322', 1, 'Fabian', 'Jaramillo', 'fandres1112@gmail.com', '31234454444', 'calle', 'Cali', 8, '2022-02-14 02:59:17'),
+(16, '1151967422', 1, 'Fabian', 'Jaramillo', 'fandres1112@gmail.com', '3142232323', 'as', 'Cali', 8, '2022-02-14 03:08:15');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `tipoidentificacion`
+--
+
+CREATE TABLE `tipoidentificacion` (
+  `pk_tipoid` int(11) NOT NULL,
+  `descripcion` varchar(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `tipoidentificacion`
+--
+
+INSERT INTO `tipoidentificacion` (`pk_tipoid`, `descripcion`) VALUES
+(1, 'CC'),
+(2, 'CE'),
+(3, 'NIT'),
+(4, 'PP'),
+(5, 'TI');
 
 -- --------------------------------------------------------
 
@@ -100,7 +126,15 @@ INSERT INTO `usuarios` (`pk_usuario`, `usuario`, `clave`, `fecha_creacion`) VALU
 --
 ALTER TABLE `datosusuarios`
   ADD PRIMARY KEY (`pk_datosusuarios`),
-  ADD KEY `usuario_creacion` (`usuario_creacion`);
+  ADD UNIQUE KEY `cedula` (`cedula`),
+  ADD KEY `usuario_creacion` (`usuario_creacion`),
+  ADD KEY `tipoid` (`fk_tipoid`);
+
+--
+-- Indices de la tabla `tipoidentificacion`
+--
+ALTER TABLE `tipoidentificacion`
+  ADD PRIMARY KEY (`pk_tipoid`);
 
 --
 -- Indices de la tabla `usuarios`
@@ -117,7 +151,13 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `datosusuarios`
 --
 ALTER TABLE `datosusuarios`
-  MODIFY `pk_datosusuarios` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `pk_datosusuarios` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+
+--
+-- AUTO_INCREMENT de la tabla `tipoidentificacion`
+--
+ALTER TABLE `tipoidentificacion`
+  MODIFY `pk_tipoid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
@@ -133,7 +173,8 @@ ALTER TABLE `usuarios`
 -- Filtros para la tabla `datosusuarios`
 --
 ALTER TABLE `datosusuarios`
-  ADD CONSTRAINT `datosusuarios_ibfk_1` FOREIGN KEY (`usuario_creacion`) REFERENCES `usuarios` (`pk_usuario`);
+  ADD CONSTRAINT `datosusuarios_ibfk_1` FOREIGN KEY (`usuario_creacion`) REFERENCES `usuarios` (`pk_usuario`),
+  ADD CONSTRAINT `datosusuarios_ibfk_2` FOREIGN KEY (`fk_tipoid`) REFERENCES `tipoidentificacion` (`pk_tipoid`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
