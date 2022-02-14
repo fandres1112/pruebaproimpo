@@ -20,7 +20,7 @@ git clone https://github.com/Logicainformatica18/bodegainformatica.git
 - ![](https://github.com/fandres1112/pruebaproimpo/blob/main/images/login.png?raw=true)
 - Formulario de Registro
 - ![](https://github.com/fandres1112/pruebaproimpo/blob/main/images/registro.png?raw=true)
-- Cuando el usuario inicie sesión accederá al formulario de Contacto
+- Cuando el usuario inicie sesión accederá a la pagina de "inicio" en la que se encuentra el formulario de Contacto
 - ![](https://github.com/fandres1112/pruebaproimpo/blob/main/images/contacto.png?raw=true)
 - En la parte superior el usuario podrá navegar, debe seleccionar la opción **"Consulta"**
 - ![](https://github.com/fandres1112/pruebaproimpo/blob/main/images/consulta.png?raw=true)
