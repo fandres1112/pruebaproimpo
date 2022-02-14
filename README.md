@@ -5,7 +5,7 @@ Este proyecto se realiza para dar continuidad al proceso de selección de la emp
 - **1 forma**. Dar clic en Code y luego en Donwload Zip, para que posteriormente sea colocado el repositorio en la ruta **"C:\xampp\htdocs"**
 - **2 forma.** Crear una carpeta(Preferiblemente en la ruta **"C:\xampp\htdocs"**), ingresar a git bash y ejecutar
 ```
-git clone https://github.com/Logicainformatica18/bodegainformatica.git
+git clone https://github.com/fandres1112/pruebaproimpo.git
 ```
 ### 2 Paso
 - Ingresar al servidor y posterior a phpMyAdmin
