@@ -7,3 +7,4 @@
     //Instaciamos y llamamos a la plantilla login para poder mostrar al usuario
     $PlantillaInicio = new controladorplantilla();
     $PlantillaInicio -> ctrplantilla();
+    //Se agrega un comentario
