@@ -8,3 +8,4 @@
     $PlantillaInicio = new controladorplantilla();
     $PlantillaInicio -> ctrplantilla();
     //Se agrega un comentario
+    //Se agrega otr
